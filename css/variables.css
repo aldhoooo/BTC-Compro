@@ -1,0 +1,190 @@
+
+/* ===========================
+   BORNEO TIMUR CEMERLANG
+   Fresh Corporate Green Theme
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+:root {
+  /* Primary Colors - Fresh Green */
+  --navy:       #173B2B;
+  --navy-mid:   #20583D;
+  --navy-light: #347653;
+
+  --ocean:      #218653;
+  --teal:       #2B9560;
+  --aqua:       #54B982;
+  --aqua-soft:  #B9DEC6;
+
+  /* Secondary Colors */
+  --gold:       #C89D58;
+  --gold-light: #E5C58B;
+
+  /* Neutral Colors */
+  --white:      #FFFFFF;
+  --off-white:  #F5F8F5;
+  --gray-100:   #EAF0EB;
+  --gray-300:   #D5E1D8;
+  --gray-500:   #819287;
+  --gray-700:   #52675A;
+
+  /* Text Colors */
+  --text-dark:  #173B2B;
+  --text-body:  #52675A;
+  --text-light: #819287;
+
+  /* Green Accent Colors */
+  --green-primary:   #2F9C64;
+  --green-dark:      #218653;
+  --green-deep:      #174F36;
+  --green-light:     #E8F2EA;
+  --green-soft:      #F2F7F2;
+  --green-highlight: #CBE5D1;
+
+  /* Typography */
+  --font-display: 'Poppins', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  40px;
+  --sp-2xl: 64px;
+  --sp-3xl: 96px;
+
+  /* Border Radius */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  /* Shadows - Soft Green */
+  --shadow-sm:  0 2px 8px rgba(24,59,43,0.05);
+  --shadow-md:  0 8px 24px rgba(24,59,43,0.07);
+  --shadow-lg:  0 16px 48px rgba(24,59,43,0.10);
+  --shadow-xl:  0 32px 80px rgba(24,59,43,0.13);
+
+  --shadow-aqua: 0 8px 32px rgba(37,184,121,0.16);
+  --shadow-gold: 0 8px 32px rgba(232,168,62,0.16);
+
+  --shadow-green: 0 8px 32px rgba(37,184,121,0.14);
+  --shadow-green-hover: 0 12px 36px rgba(37,184,121,0.22);
+
+  /* Transitions */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:    cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --dur-fast:   150ms;
+  --dur-mid:    300ms;
+  --dur-slow:   600ms;
+
+  /* Layout */
+  --max-w:      1240px;
+  --nav-h:      64px;
+}
+
+/* === RESET === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green-primary);
+  border-radius: 3px;
+}
+
+/* === SELECTION === */
+::selection {
+  background: var(--green-highlight);
+  color: var(--navy);
+}
+
+/* === CONTAINER === */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--sp-md);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--sp-xl);
+  }
+}
+
+/* === UTILITY === */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
